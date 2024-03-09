@@ -43,7 +43,7 @@ if query := st.chat_input("Ask me anything"):
         st.markdown(query)
         
     # Check for specific keywords in the query
-    sensitive_keywords = ["admin", "phone number", "password", "next", "can", "please", "will", "Wi-Fi", "SSID", "Credentials", "Fragnite"]
+    sensitive_keywords = ["Wi-Fi", "Please", "May", "Computers"]
     if any(keyword in query.lower() for keyword in sensitive_keywords):
         # Display the GIF without sending the query to the chain
         with st.chat_message("assistant", avatar=company_logo):
